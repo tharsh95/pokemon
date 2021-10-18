@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+body{
+    overflow-y: hidden;
+    font-family: 'Pokemon Solid', sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+    width: 100vw;   
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 5px black;
+    /* margin-bottom: 1rem; */
+    border-radius: 2px;
 }
-
-.App-link {
-  color: #61dafb;
+.header>h1{
+    color: aliceblue;
+    font-size: 3rem;
+    position: relative;
+    bottom: 15%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header>input{
+    position: relative;
+    left: 35%;
+    padding: 1rem;
+}
+.pokemon{
+    display: flex;
+    flex-wrap: wrap;
+margin: 2rem;
+justify-content: center;
+overflow-y: scroll;
+height: 75vh;
+border: 2px solid transparent;
+box-shadow: 5px 5px 10px 5px black;
+border-radius: 8px;
+}
+.pokemon::-webkit-scrollbar{
+    display: none;
+}
+@media (min-width:100px)  and (max-width:1090px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        /* width: fit-content; */
+        height: 25vh;
+    }
+    .header>input{
+        position: relative;
+        left: 1%;
+        bottom: -5%;
+    }
+    .header>h1{
+        position: relative;
+        top: -10%;
+    }
 }
