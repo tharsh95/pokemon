@@ -18,6 +18,8 @@
 
 img {
   width: 200px;
+  position: relative;
+  top: -35%;
   height: 150px;
 }
 .container {
@@ -37,7 +39,7 @@ img {
   transform: rotateY(180deg);
   position: absolute;
   backface-visibility: hidden;
-  bottom: 35%;
+  bottom: 25%;
   line-height:  40px;
   /* margin: 5rem; */
   right: 10%;
@@ -57,11 +59,14 @@ img {
       transform: rotateY(180deg);
       position: absolute;
       backface-visibility: hidden;
-      bottom: 25%;
+      bottom: 10%;
       line-height:  40px;
+      width: 200px;
       /* margin: 5rem; */
       right: 15%;
       font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
     
     }
     
