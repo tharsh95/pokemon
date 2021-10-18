@@ -26,12 +26,13 @@ body{
     color: aliceblue;
     font-size: 3rem;
     position: relative;
-    bottom: 15%;
+    bottom: 5%;
 }
 .header>input{
     position: relative;
-    left: 35%;
+    left: 30%;
     padding: 1rem;
+    border-radius: 8px;
 }
 .pokemon{
     display: flex;
