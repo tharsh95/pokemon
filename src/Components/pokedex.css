@@ -12,8 +12,8 @@
   box-shadow: 5px 5px 10px 10px blueviolet;
   color: blueviolet;
 }
-.card:hover{
-    transform: rotateY(180deg);
+.card:hover {
+  transform: rotateY(180deg);
 }
 
 img {
@@ -37,41 +37,45 @@ img {
 }
 .back {
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
   position: absolute;
   backface-visibility: hidden;
-  bottom: 5%;
-  line-height:  40px;
+  /* bottom: 5%; */
+  line-height: 40px;
   /* margin: 5rem; */
-  right: 10%;
+  /* right: 10%; */
   font-size: 1.5rem;
-
+  margin-left: -50px;
 }
 .name {
   font-size: 2rem;
   color: blueviolet;
   text-transform: capitalize;
 }
-  @media (min-width:100px) and (max-width:1090px){
-    .card{
-      width: 75vw;
-      height: 45vh;
-      /* font-size: 0.1rem; */
-    }
-    .name{
-      font-size: 1.5rem;
-    }
-    .back {
-      transform: rotateY(180deg);
-      position: absolute;
-      backface-visibility: hidden;
-      bottom: 10%;
-      line-height:  40px;
-      width: 60vw;
-      right: 1%;
-      font-size: 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-    }
-        
-    
+@media (min-width: 100px) and (max-width: 1090px) {
+  .card {
+    width: 75vw;
+    height: 45vh;
+    /* font-size: 0.1rem; */
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    backface-visibility: hidden;
+    bottom: 10%;
+    line-height: 40px;
+    width: 60vw;
+    right: 1%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
