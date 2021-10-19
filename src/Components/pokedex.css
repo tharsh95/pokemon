@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-items: center;
   height: 20rem;
-  width: 80vw;
+  width: 20vw;
   transform-style: preserve-3d;
   transition: all 2s ease;
   border-radius: 8px;
@@ -59,9 +59,7 @@ img {
       bottom: 10%;
       line-height:  40px;
       width: 60vw;
-      /* margin: 5rem; */
       right: 1%;
-      text-overflow: ellipsis;
       font-size: 1.5rem;
       display: flex;
       flex-wrap: wrap;
