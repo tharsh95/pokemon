@@ -14,7 +14,7 @@ const Pokedex = ({ name, image, index, type, weight, height,ability }) => {
                     <div>Type: {type[0].type.name}</div>
                     <div>Weight:{weight}</div>
                     <div>Height:{height}</div>
-                    <div>Ability:{ability.map((el,id)=>(<span key={id}>{el.ability.name}.</span>))}</div>
+                    <div>Ability:{ability.map((el,id)=>(<span key={id}>{el.ability.name}, </span>))}etc..</div>
                 </div>
             </div>
         </div>

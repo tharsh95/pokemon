@@ -39,7 +39,7 @@ img {
   transform: rotateY(180deg);
   position: absolute;
   backface-visibility: hidden;
-  bottom: 25%;
+  bottom: 5%;
   line-height:  40px;
   /* margin: 5rem; */
   right: 10%;
