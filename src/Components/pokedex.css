@@ -52,6 +52,9 @@ img {
   text-transform: capitalize;
 }
   @media (min-width:100px) and (max-width:1090px){
+    .card{
+      width: 75vw;
+    }
     .back {
       transform: rotateY(180deg);
       position: absolute;
